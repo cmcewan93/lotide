@@ -10,11 +10,11 @@ const eqArrays = function (array1, array2) {
   return flag;
 }
 
-const assertArrayEquals = function (array1, array2) {
-  if(eqArrays(array1, array2)) {
-    console.log(` ✅✅✅Assertion passed: ${array1} === ${array2}`);
+const assertArrayEquals = function (actual, expected) {
+  if(eqArrays(actual, expected)) {
+    console.log(` ✅✅✅Assertion passed: ${actual} === ${expected}`);
   } else {
-    console.log(` ❌❌❌Assertion failed: ${array1} !==  ${array2}`);
+    console.log(` ❌❌❌Assertion failed: ${actual} !==  ${expected}`);
   }
 }
 assertArrayEquals([1, 2, 3], [1, 2, 3]);
