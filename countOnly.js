@@ -15,28 +15,28 @@ const countOnly = function(allItems, itemsToCount) {
     console.log(key);
     if (itemsToCount[key]) { //if the value is true
       for (let i = 0; i < allItems.length; i++) { //check all items to see if key matches
-        if(key === allItems[i]) {
+        if (key === allItems[i]) {
           count++;
-        } 
+        }
       }
     }
-    if(count === 0 && itemsToCount[key] != false) { //checks if key isnt there 
-      matches[key] = undefined
+    if (count === 0 && itemsToCount[key] !== false) { //checks if key isnt there
+      matches[key] = undefined;
     } else {
-    matches[key] = count; //assigns count to new object
+      matches[key] = count; //assigns count to new object
     }
   }
   return matches;
-}
+};
 
 
 
 
 
- /**
+/**
   * TEST CASES
   */
- const assertEqual = function(actual, expected) {
+const assertEqual = function(actual, expected) {
   actual === expected
     ? console.log(` ✅✅✅Assertion passed: ${actual} === ${expected}`)
     : console.log(` ❌❌❌Assertion failed: ${actual} !==  ${expected}`);
@@ -59,10 +59,10 @@ const firstNames = [
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Matt": false});
 
-// let input = { 
+// let input = {
 //   "Jason": true,
-//   "Karima": true, 
-//   "Fang": true, 
+//   "Karima": true,
+//   "Fang": true,
 //   "Matt": false
 // };
 

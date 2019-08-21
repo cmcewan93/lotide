@@ -14,7 +14,7 @@ const tail = function(array) {
   return newArray;
 };
 
-const trimmedArrayCheck = function(array1, array2) {
+const trimmedArrayCheck = function(array1, array2) { //checks each element of trimmed array
   let i = 0;
   if ((array1.length > 0 && array2.length > 0) && array1.length === array2.length) { //check that arrays arent empty and that they are same length
     array1.forEach(function(val) { //compares each index of anticipated array output and newly trimmed array
@@ -24,6 +24,7 @@ const trimmedArrayCheck = function(array1, array2) {
   } else console.log("array not big enough");
 };
 
+// TEST CASES
 
 const words1 = ["Yo Yo", "Lighthouse", "Labs"];
 const answer = ["Lighthouse", "Labs"];
