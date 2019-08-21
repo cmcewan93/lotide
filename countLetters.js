@@ -1,15 +1,15 @@
 const countLetters = function(string) {
-  var result = {};
+  let result = {};
   string = string.replace(/\s+/g, ''); //remove white space
-    for (let i = 0; i < string.length; i++) {
-        let char = string.charAt(i);
-        if (result[char]) { //if there is nothing will returne undefined
-           result[char]++;
-        } else {
-           result[char] = 1;
-        }
+  for (let i = 0; i < string.length; i++) {
+    let char = string.charAt(i);
+    if (result[char]) { //if there is nothing will returne undefined
+      result[char]++;
+    } else {
+      result[char] = 1;
     }
-    return result;
+  }
+  return result;
 };
 
 
