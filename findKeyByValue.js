@@ -6,13 +6,8 @@
 
 const findKeyByValue = function(object, value) {
   return Object.keys(object).find(key => object[key] === value);
-
+  //object keys gives array, find returns first elenet in array where true, undefined if not
 };
- 
- 
- 
- 
- 
  
 /**
   * Test Cases
@@ -26,7 +21,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
+  sci_Fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };

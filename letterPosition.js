@@ -8,7 +8,6 @@ const letterPositions = function(string) {
     result[key] = occurrences(key, stringArr);
   }
   return result;
-  
 };
 
 const occurrences = function(char, array) {
