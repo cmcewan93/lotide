@@ -1,11 +1,5 @@
 
 
-const assertEqual = function(actual, expected) {
-  actual === expected
-    ? console.log(` ✅✅✅Assertion passed: ${actual} === ${expected}`)
-    : console.log(` ❌❌❌Assertion failed: ${actual} !==  ${expected}`);
-};
-
 const tail = function(array) {
   let newArray = [];
   for (let i = 1; i < array.length; i++) {
@@ -24,18 +18,7 @@ const trimmedArrayCheck = function(array1, array2) { //checks each element of tr
   } else console.log("array not big enough");
 };
 
+module.exports = tail;
 // TEST CASES
 
-const words1 = ["Yo Yo", "Lighthouse", "Labs"];
-const answer = ["Lighthouse", "Labs"];
-//console.log(tail(words));
-trimmedArrayCheck(words1, answer);
-//console.log(tail(words));
-//console.log(words);
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
-const test = [];
-console.log(tail(test));
-console.log(tail(words));
 

@@ -6,7 +6,3 @@ const assertEqual = function(actual, expected) {
 
 module.exports = assertEqual;
 
-/*assertEqual('true', 'true');
-assertEqual('true', 'false');
-assertEqual(1, 2);
-assertEqual(5, 5);*/
